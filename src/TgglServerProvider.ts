@@ -19,8 +19,8 @@ export class TgglServerProvider implements Provider {
   events: ProviderEventEmitter<AnyProviderEvent>
 
   constructor(
-    apiKey: ConstructorParameters<typeof TgglLocalClient>[0],
-    options: ConstructorParameters<typeof TgglLocalClient>[1]
+    apiKey?: ConstructorParameters<typeof TgglLocalClient>[0],
+    options?: ConstructorParameters<typeof TgglLocalClient>[1]
   ) {
     this.client = new TgglLocalClient(apiKey, options)
 
