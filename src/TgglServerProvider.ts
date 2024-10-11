@@ -35,6 +35,10 @@ export class TgglServerProvider implements Provider {
     await this.client.fetchConfig()
   }
 
+  async onClose(): Promise<void> {
+    this.client.stopPolling()
+  }
+
   async resolveBooleanEvaluation(
     flagKey: string,
     defaultValue: boolean,
