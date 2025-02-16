@@ -34,7 +34,7 @@
     "@openfeature/server-sdk": "^1.15.1"
   },
   "dependencies": {
-    "tggl-client": "^2.0.1"
+    "tggl-client": "^2.1.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.13",
